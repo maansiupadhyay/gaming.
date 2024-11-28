@@ -1,0 +1,119 @@
+.question-card {
+    display: flex;
+    background-color: aliceblue;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 30px;
+    position: relative;
+    margin-top: 30px;
+    width: 60vw;
+  }
+  
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 15px;
+  }
+  
+  .question-content {
+    flex-grow: 1;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .question-meta {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    color: #777;
+  }
+  
+  .question-meta > span {
+    margin-right: 15px;
+  }
+  
+  .status {
+    color: #131e56;
+  }
+  
+  .stars::before {
+    content: "★ ";
+    color: #ffd700;
+  }
+  
+  .category::before {
+    content: "📁 ";
+  }
+  
+  .duration::before {
+    content: "🕒 ";
+  }
+  
+  .answers::before {
+    content: "💬 ";
+  }
+  
+  .views::before {
+    content: "👁 ";
+  }
+  
+  .explainer {
+    background-color: #4caf50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  
+  .question-type {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+  
+  .question-button, .poll-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+  }
+  
+  .poll-button {
+    background-color: #e91e63;
+  }
+  
+  .report-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 1250px) {
+    .question-card {
+      width: 90vw;
+    }
+  }
